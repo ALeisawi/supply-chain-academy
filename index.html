@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#102a43"><meta name="description" content="أكاديمية سلاسل الإمداد للتحضير لشهادات CIPS وCSCP وCLTD">
+  <link rel="manifest" href="manifest.webmanifest"><link rel="apple-touch-icon" href="icon-192.png">
+  <title>Supply Chain Academy</title>
+  <style>
+    :root{--navy:#102a43;--blue:#2563eb;--mint:#d9f4e7;--paper:#f5f7fb;--ink:#172b4d;--muted:#65758b;--line:#e2e8f0;--white:#fff;--gold:#eabf65}
+    *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Tahoma,Arial,sans-serif;line-height:1.6}button,input,select{font:inherit}button{cursor:pointer;border:0;border-radius:14px;padding:12px 16px;font-weight:700}.app{max-width:760px;margin:auto;padding-bottom:90px}.hero{background:linear-gradient(145deg,#102a43,#1e4970);color:white;padding:28px 20px 26px;border-radius:0 0 28px 28px}.brand{display:flex;align-items:center;gap:10px;font-size:14px;opacity:.92}.brandmark{width:38px;height:38px;border-radius:12px;background:#ffffff20;display:grid;place-items:center;font-size:22px}.hero h1{font-size:27px;line-height:1.25;margin:20px 0 8px}.hero p{margin:0;color:#dce7f3;font-size:14px}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-top:22px}.stat{background:#ffffff13;border:1px solid #ffffff24;border-radius:15px;padding:11px;text-align:center}.stat b{display:block;font-size:20px}.stat span{font-size:11px;color:#dce7f3}.main{padding:18px 16px}.sectionhead{display:flex;align-items:center;justify-content:space-between;margin:18px 2px 12px}.sectionhead h2{font-size:18px;margin:0}.small{font-size:12px;color:var(--muted)}.card{background:white;border:1px solid var(--line);border-radius:20px;padding:16px;margin-bottom:12px;box-shadow:0 3px 12px #183b5708}.course-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}.course{padding:13px 9px;border:1px solid var(--line);background:white;border-radius:17px;text-align:right;min-height:112px;color:var(--ink)}.course.active{border:2px solid var(--blue);background:#eff6ff;padding:12px 8px}.course .symbol{font-size:22px;display:block;margin-bottom:5px}.course b{display:block;font-size:13px}.course span{font-size:11px;color:var(--muted)}.lesson-title{font-weight:800;font-size:17px;margin:0 0 5px}.tag{display:inline-block;background:#eef4ff;color:#1d4ed8;border-radius:999px;padding:4px 9px;font-size:11px;font-weight:700;margin-bottom:8px}.lesson-body{font-size:14px;color:#334155}.vocab{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:12px 0}.vocab div{background:#f8fafc;border-radius:12px;padding:10px;font-size:13px}.vocab b{display:block;direction:ltr;text-align:right;color:#1d4ed8}.primary{background:var(--blue);color:white}.secondary{background:#eef2f7;color:var(--ink)}.full{width:100%}.progressbar{height:8px;border-radius:99px;background:#e8edf4;overflow:hidden;margin:10px 0}.progressbar i{display:block;height:100%;background:#16a36a;width:0;transition:width .2s}.question{font-weight:700;margin:12px 0}.option{display:flex;align-items:flex-start;gap:9px;padding:10px;border:1px solid var(--line);border-radius:12px;margin:7px 0;background:white;font-size:14px}.option input{margin-top:5px;accent-color:var(--blue)}.feedback{padding:12px;border-radius:12px;margin-top:10px;background:#f0fdf4;color:#166534;font-size:13px}.feedback.bad{background:#fff1f2;color:#9f1239}.settingrow{display:flex;align-items:center;justify-content:space-between;gap:12px}.settingrow input[type=time]{border:1px solid var(--line);border-radius:10px;padding:8px;background:white;direction:ltr}.nav{position:fixed;bottom:0;left:0;right:0;background:#ffffffed;backdrop-filter:blur(12px);border-top:1px solid var(--line);padding:9px max(14px,env(safe-area-inset-right)) calc(9px + env(safe-area-inset-bottom));display:flex;justify-content:center;z-index:10}.navinner{display:flex;max-width:760px;width:100%;justify-content:space-around}.nav button{background:transparent;color:var(--muted);padding:7px 10px;font-size:12px}.nav button.active{color:var(--blue);background:#eff6ff}.view{display:none}.view.active{display:block}.note{background:#fff7e6;border:1px solid #f4dfad;padding:12px;border-radius:14px;font-size:12px;color:#795b1b}.muted{color:var(--muted)}
+    @media(min-width:600px){.hero{border-radius:0 0 30px 30px;padding:32px}.main{padding:22px 24px}.hero h1{font-size:32px}}
+  </style>
+</head>
+<body>
+<div class="app">
+<header class="hero">
+  <div class="brand"><div class="brandmark">↗</div><div><b>SUPPLY CHAIN ACADEMY</b><div style="font-size:11px;color:#dce7f3">تعلم يومي • خطوة نحو شهادتك المهنية</div></div></div>
+  <h1>طوّر مهاراتك في<br>سلاسل الإمداد واللوجستيات</h1>
+  <p>دروس قصيرة بالعربية، مصطلحات إنجليزية، تطبيق عملي واختبارات.</p>
+  <div class="stats"><div class="stat"><b id="doneCount">0</b><span>دروس مكتملة</span></div><div class="stat"><b id="streakCount">0</b><span>أيام دراسة</span></div><div class="stat"><b id="quizCount">0%</b><span>آخر نتيجة</span></div></div>
+</header>
+<main class="main">
+<section id="homeView" class="view active">
+  <div class="sectionhead"><h2>مسارك التعليمي</h2><span class="small">اختر شهادة</span></div>
+  <div class="course-grid">
+    <button class="course active" data-course="CSCP"><span class="symbol">🌐</span><b>CSCP</b><span>سلسلة الإمداد</span></button>
+    <button class="course" data-course="CLTD"><span class="symbol">🚚</span><b>CLTD</b><span>اللوجستيات</span></button>
+    <button class="course" data-course="CIPS"><span class="symbol">🤝</span><b>CIPS</b><span>المشتريات</span></button>
+  </div>
+  <div class="sectionhead"><h2>درس اليوم</h2><span class="tag" id="courseTag">CSCP • تأسيسي</span></div>
+  <article class="card" id="lessonCard"></article>
+  <div class="sectionhead"><h2>تحدي اليوم</h2><span class="small">سؤال تدريبي</span></div>
+  <div class="card" id="quizCard"></div>
+  <div class="note">المحتوى الحالي نموذج تأسيسي للتطبيق. قبل الاستعداد للاختبار الرسمي، طابق كل موضوع مع أحدث دليل صادر عن CIPS أو ASCM.</div>
+</section>
+<section id="progressView" class="view">
+  <div class="sectionhead"><h2>تقدمي في الدراسة</h2></div>
+  <div class="card"><div class="settingrow"><b>الدروس المكتملة</b><b id="progressLabel">0 / 3</b></div><div class="progressbar"><i id="progressBar"></i></div><p class="small">أكمل الدروس واضغط «أنهيت الدرس» لتحديث تقدمك على هذا الجهاز.</p></div>
+  <div class="card"><h3 style="margin-top:0">ما الذي تم إنجازه؟</h3><div id="completedList" class="muted">لم تكمل أي درس بعد.</div></div>
+</section>
+<section id="reminderView" class="view">
+  <div class="sectionhead"><h2>تذكير الدراسة</h2></div>
+  <div class="card">
+    <div class="settingrow"><div><b>موعد الدراسة اليومي</b><div class="small">اختر الوقت الذي يناسبك</div></div><input id="reminderTime" type="time" value="20:00"></div>
+    <button id="saveReminder" class="primary full" style="margin-top:16px">تفعيل إعداد التذكير</button>
+    <p id="reminderStatus" class="small">لم يتم إعداد التذكير بعد.</p>
+    <div class="note">تنبيه تقني: حفظ الوقت داخل هذا النموذج لا ينشئ وحده إشعاراً يعمل والتطبيق مغلق. إشعارات iPhone اليومية تحتاج نشر التطبيق على HTTPS، وتثبيته على الشاشة الرئيسية، وخدمة Push على خادم، ثم السماح بالإشعارات. هذا المشروع يتضمن واجهة البداية فقط ولا يرسل إشعارات سحابية بعد.</div>
+  </div>
+  <div class="card"><h3 style="margin-top:0">إضافة التطبيق إلى شاشة iPhone الرئيسية</h3><ol style="padding-right:22px;font-size:14px"><li>افتح رابط التطبيق المنشور في Safari.</li><li>اضغط زر المشاركة.</li><li>اختر «إضافة إلى الشاشة الرئيسية».</li><li>افتح التطبيق من الأيقونة ثم اسمح بالإشعارات عندما تكون خدمة الإشعارات مهيأة.</li></ol></div>
+</section>
+<section id="aboutView" class="view">
+  <div class="sectionhead"><h2>عن الأكاديمية</h2></div>
+  <div class="card"><h3 style="margin-top:0">تعلم عملي ومباشر</h3><p>تم تصميم هذا النموذج لمساعدتك على تنظيم تعلمك لشهادات CIPS وCSCP وCLTD. الدروس التجريبية تربط المفاهيم بأمثلة تشغيلية، مثل قطع الغيار، زمن التوريد، الموردين ومستوى الخدمة.</p><p class="small">النسخة الحالية تحفظ التقدم محلياً في المتصفح. لا يوجد حساب مستخدم أو مزامنة بين الأجهزة أو إشعار Push فعلي في هذه النسخة.</p><button id="resetData" class="secondary full">إعادة ضبط تقدم هذا الجهاز</button></div>
+</section>
+</main>
+<nav class="nav"><div class="navinner"><button class="active" data-view="homeView">🏠<br>الرئيسية</button><button data-view="progressView">📈<br>تقدمي</button><button data-view="reminderView">🔔<br>التذكير</button><button data-view="aboutView">ⓘ<br>حول التطبيق</button></div></nav>
+</div>
+<script>
+const lessons={
+ CSCP:{tag:'CSCP • تأسيسي',title:'مقدمة في إدارة سلسلة الإمداد',duration:'6 دقائق',intro:'سلسلة الإمداد هي شبكة الجهات والعمليات التي تنسق تدفق المنتجات والخدمات والمعلومات من الموردين إلى العميل النهائي. الهدف هو تلبية الطلب مع موازنة التكلفة والجودة والسرعة والمخاطر.',example:'مثال تشغيلي: عند الحاجة إلى قطعة غيار لجهاز تذاكر، نحدد الطلب، ونراجع المخزون، ونطلب القطعة من المورد، ثم نتابع زمن التوريد وتأثيره في استمرارية الخدمة.',terms:[['Supply Chain','سلسلة الإمداد'],['Lead Time','زمن التوريد'],['Inventory','المخزون'],['Service Level','مستوى الخدمة']],question:'ما الهدف الأفضل لإدارة سلسلة الإمداد؟',options:['شراء كل شيء بأقل سعر فقط','تنسيق تدفق المنتجات والمعلومات لتحقيق احتياجات العميل بكفاءة','زيادة المخزون دائماً'],answer:1,why:'الإجابة الصحيحة: تنسيق التدفق مع تحقيق التوازن بين الخدمة والتكلفة والمخاطر.'},
+ CLTD:{tag:'CLTD • تأسيسي',title:'أساسيات اللوجستيات والنقل',duration:'6 دقائق',intro:'تركز اللوجستيات على التخطيط والتنفيذ والتحكم في حركة السلع وتخزينها والمعلومات المرتبطة بها من نقطة المنشأ إلى نقطة الاستهلاك.',example:'مثال: اختيار طريقة نقل قطعة غيار لا يعتمد على السعر فقط؛ بل يشمل سرعة التسليم، موثوقية الناقل، سلامة القطعة، والتكلفة الكلية.',terms:[['Transportation','النقل'],['Distribution','التوزيع'],['Warehouse','المستودع'],['Freight Cost','تكلفة الشحن']],question:'أي عامل ينبغي تقييمه عند اختيار ناقل؟',options:['السعر وحده','السعر والوقت والموثوقية وسلامة الشحنة','لون مركبات الناقل'],answer:1,why:'القرار اللوجستي الجيد يوازن التكلفة والوقت والموثوقية وسلامة الشحنة.'},
+ CIPS:{tag:'CIPS • تأسيسي',title:'أساسيات المشتريات وإدارة الموردين',duration:'6 دقائق',intro:'المشتريات المهنية هي عملية تحديد الاحتياج، وتقييم السوق والموردين، واختيار العرض المناسب، والتفاوض وإدارة العقد والأداء والمخاطر.',example:'مثال: قبل اختيار مورد لقطع الغيار، قارن الجودة والالتزام بالتسليم وخدمة ما بعد البيع والمخاطر، لا سعر الشراء فقط.',terms:[['Procurement','المشتريات والتوريد'],['Supplier','المورد'],['Negotiation','التفاوض'],['Total Cost of Ownership','التكلفة الإجمالية للملكية']],question:'ما أفضل أساس لاختيار مورد استراتيجي؟',options:['أقل سعر دائماً','تقييم متوازن للتكلفة والجودة والمخاطر والأداء','اختيار أول مورد يرد'],answer:1,why:'تقييم القيمة الكلية والمخاطر والأداء يساعد على اتخاذ قرار مستدام.'}
+};
+let state=JSON.parse(localStorage.getItem('sca-state')||'{"course":"CSCP","done":[],"lastScore":null,"days":[]}');let selectedQuiz=null;
+function save(){localStorage.setItem('sca-state',JSON.stringify(state));renderStats()}
+function renderStats(){document.getElementById('doneCount').textContent=state.done.length;document.getElementById('quizCount').textContent=state.lastScore===null?'—':state.lastScore+'%';document.getElementById('streakCount').textContent=state.days.length;document.getElementById('progressLabel').textContent=state.done.length+' / 3';document.getElementById('progressBar').style.width=(state.done.length/3*100)+'%';document.getElementById('completedList').textContent=state.done.length?state.done.map(x=>lessons[x].title).join('، '):'لم تكمل أي درس بعد.'}
+function renderLesson(){const l=lessons[state.course];document.getElementById('courseTag').textContent=l.tag;document.getElementById('lessonCard').innerHTML=`<span class="tag">📘 ${l.duration}</span><h3 class="lesson-title">${l.title}</h3><p class="lesson-body">${l.intro}</p><div style="background:#f0f7ff;padding:12px;border-radius:13px;font-size:13px"><b>تطبيق عملي</b><br>${l.example}</div><div class="vocab">${l.terms.map(t=>`<div><b>${t[0]}</b>${t[1]}</div>`).join('')}</div><button id="completeLesson" class="primary full">${state.done.includes(state.course)?'✓ أنهيت هذا الدرس':'أنهيت الدرس'}</button><p class="small" style="margin-bottom:0">فيديو مقترح: <a target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=${encodeURIComponent(state.course+' certification fundamentals '+l.title)}">ابحث عن شرح مرئي للموضوع ↗</a></p>`;
+ document.getElementById('completeLesson').onclick=()=>{if(!state.done.includes(state.course))state.done.push(state.course);const today=new Date().toISOString().slice(0,10);if(!state.days.includes(today))state.days.push(today);save();renderLesson();};renderQuiz();}
+function renderQuiz(){const l=lessons[state.course];document.getElementById('quizCard').innerHTML=`<div class="small">سؤال 1 من 1 • ${state.course}</div><div class="question">${l.question}</div>${l.options.map((o,i)=>`<label class="option"><input type="radio" name="answer" value="${i}"><span>${o}</span></label>`).join('')}<button class="primary full" id="checkAnswer">تحقق من الإجابة</button><div id="answerFeedback"></div>`;document.getElementById('checkAnswer').onclick=()=>{const a=document.querySelector('input[name="answer"]:checked');const f=document.getElementById('answerFeedback');if(!a){f.innerHTML='<div class="feedback bad">اختر إجابة أولاً.</div>';return}const ok=Number(a.value)===l.answer;state.lastScore=ok?100:0;save();f.innerHTML=`<div class="feedback ${ok?'':'bad'}">${ok?'أحسنت! إجابة صحيحة.':'ليست الإجابة الصحيحة بعد.'}<br>${l.why}</div>`;};}
+document.querySelectorAll('[data-course]').forEach(b=>b.onclick=()=>{state.course=b.dataset.course;document.querySelectorAll('[data-course]').forEach(x=>x.classList.toggle('active',x===b));save();renderLesson()});
+document.querySelectorAll('[data-view]').forEach(b=>b.onclick=()=>{document.querySelectorAll('.view').forEach(v=>v.classList.remove('active'));document.getElementById(b.dataset.view).classList.add('active');document.querySelectorAll('[data-view]').forEach(x=>x.classList.toggle('active',x===b));if(b.dataset.view==='progressView')renderStats()});
+document.getElementById('saveReminder').onclick=async()=>{const time=document.getElementById('reminderTime').value;localStorage.setItem('sca-reminder-time',time);const s=document.getElementById('reminderStatus');if(!('Notification' in window)){s.textContent='هذا المتصفح لا يدعم واجهة الإشعارات. يلزم نشر التطبيق كـ PWA على HTTPS.';return}try{const permission=await Notification.requestPermission();s.textContent=permission==='granted'?'تم السماح بالإشعارات لهذا الموقع، لكن التذكير اليومي يحتاج ربط خدمة Push على خادم؛ لم يتم تفعيل الإرسال التلقائي بعد.':'لم يتم السماح بالإشعارات. يمكنك تغيير الإذن من إعدادات المتصفح.'}catch(e){s.textContent='تعذر طلب الإذن في هذه البيئة. افتح النسخة المنشورة من Safari على iPhone.'}};
+document.getElementById('resetData').onclick=()=>{if(confirm('هل تريد حذف تقدم الدراسة المحفوظ على هذا الجهاز؟')){localStorage.removeItem('sca-state');state={course:'CSCP',done:[],lastScore:null,days:[]};save();renderLesson()}};
+if('serviceWorker' in navigator && location.protocol.startsWith('http'))navigator.serviceWorker.register('./sw.js').catch(()=>{});
+renderStats();renderLesson();
+</script>
+</body></html>
