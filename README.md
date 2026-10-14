@@ -1,21 +1,24 @@
-# Supply Chain Academy — iPhone PWA starter
+# Supply Chain Academy v2
 
-## What works now
-- Arabic RTL responsive learning interface.
-- Course switching between introductory CSCP, CLTD, and CIPS lessons.
-- Vocabulary, scenario examples, YouTube topic search links, and one-question quiz per course.
-- Progress and quiz result saved locally in the browser.
-- PWA manifest and service worker scaffold.
+## Content structure
+- 3 learning tracks: CSCP, CLTD, CIPS
+- 3 units per track (9 total)
+- 3 lessons per unit (27 total)
+- 30 practice questions per unit (270 total)
+- Arabic explanations with English terminology, practical scenarios, and answer rationales
 
-## Important notification limitation
-The included screen can request browser notification permission, and the service worker can display a notification **when a real push message is delivered**. It does not yet schedule or send daily push notifications by itself. On iPhone, a web app generally needs to be installed to the Home Screen, hosted over HTTPS, and notifications enabled (iOS/iPadOS 16.4+). Reliable scheduled delivery while the app is closed requires a push service/backend, VAPID keys, storing each device's push subscription, and a daily scheduled server job. Those hosting credentials and services are not included/configured in this starter.
+## Files
+- `index.html`: responsive Arabic learning interface, lesson navigation, unit quizzes, progress page, exportable progress backup
+- `content.js`: authored lesson and quiz content
+- `manifest.webmanifest`: installable web app metadata
+- `sw.js`: static asset caching for offline/reliable loading
+- `icon-192.png`, `icon-512.png`: app icons
 
-## Publish for iPhone testing
-1. Deploy the contents of this folder to an HTTPS static host (e.g. a static hosting provider).
-2. Open the deployed URL in Safari on iPhone.
-3. Tap Share → Add to Home Screen → Add.
-4. Open it from the new Home Screen icon.
-5. To enable real daily push reminders, implement the server endpoints for push subscription and configure VAPID credentials plus a daily scheduler. Do not expose the VAPID private key in client code.
+## Publish on GitHub Pages
+Upload all files in this folder to the repository root, replacing the old files. Then open Settings → Pages, choose `Deploy from a branch`, select branch `main` and folder `/(root)`, and save. Wait for the deployment to finish.
 
-## Content note
-Lessons are introductory examples, not a complete official exam curriculum. Before exam preparation, map the complete study plan to the current official CIPS / ASCM exam guide and use authorized study resources.
+## Progress and limitations
+Progress is stored in localStorage on the current browser/device. Use “Export progress backup” before changing browsers or clearing website data. This version does not sync across devices and does not implement automatic push reminders. Push notifications require a push service/backend and explicit permission.
+
+## Study-content note
+This is original introductory study content and practice questions, not official exam material and not a guarantee of alignment to every current exam objective. Check the latest official syllabus/exam blueprint and authorized resources for each certification before relying on it for exam preparation. Some question stems are intentionally concept-reinforcement variants; review and expand the bank with domain-specific past-practice style questions as the curriculum is validated.
